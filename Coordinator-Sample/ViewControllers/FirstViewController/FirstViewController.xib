@@ -17,14 +17,38 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV4-y8-O0n">
+                    <rect key="frame" x="129" y="430.5" width="156.5" height="35.5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Complete Form" cornerStyle="medium">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemTealColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="completeFormButtonAction:" destination="-1" eventType="touchUpInside" id="6Ki-zr-2Na"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <constraints>
+                <constraint firstItem="lV4-y8-O0n" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QkQ-hc-S0P"/>
+                <constraint firstItem="lV4-y8-O0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qCp-zn-rKl"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="144"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
